@@ -6,8 +6,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "NODE_ENV=production npm run clean && webpack -p",
-	"serve": "webpack-dev-server",
-	"deploy": "npm run build && git subtree push --prefix dist origin gh-pages"
+    "serve": "webpack-dev-server",
+    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages"
   },
   "repository": "https://github.com/marcedem/webpackWorldProject",
   "author": "",
@@ -34,6 +34,7 @@
     "rimraf": "^2.6.1",
     "style-loader": "^0.13.1",
     "webpack": "2.2.0-rc.0",
+    "webpack-dev-middleware": "^1.10.2",
     "webpack-dev-server": "^2.2.0-rc.0"
   }
 }
