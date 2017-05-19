@@ -1,0 +1,3 @@
+{
+    "presets": ["babel-preset-env", "react"] // react preset to handle react code and jsx
+}
