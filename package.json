@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && webpack",
-	"serve": "webpack-dev-server"
+    "build": "NODE_ENV=production npm run clean && webpack -p",
+	"serve": "webpack-dev-server",
+	"deploy": "npm run build && git subtree push --prefix dist origin gh-pages"
   },
   "repository": "https://github.com/marcedem/webpackWorldProject",
   "author": "",
